@@ -71,7 +71,7 @@ footer>div {
 }
 
 footer p {
-    font-size:30px;
+    font-size:20px;
 }
 
 .footer-r img {
@@ -158,11 +158,93 @@ footer p {
     flex-direction: column;
     line-height: 1.5;
     font-size: 25px;
-    margin: 0 25%;
+    margin: 0 auto;
     width: 50%;
-    height: 100vh;
 }
 
 .about h1 {
     font-size: 60px;
+}
+
+.works {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.works h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: ro;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 50px;
+}
+
+.work {
+    width: 300px;
+    height: 400px;
+    background: var(--primary-col);
+    border: 5px solid var(--tertiary-col);
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.work-heading {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.work-desc {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.work-desc a {
+    display: block;
+    color: var(--quaternary-col);
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.work-desc a:hover {
+    color: var(--tertiary-col);
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.run-buddy {
+    background-image: url(../images/realnifty.github.io_run-buddy_.png);
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.calculator {
+    background-image: url(../images/43878.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.workout-tracker {
+    background-image: url(../images/workout-tracker.jpg);
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.spotify-app {
+    background-image: url(../images/Logospotify.webp);
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
 }
