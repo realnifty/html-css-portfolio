@@ -10,6 +10,10 @@
     --tertiary-col: #E3CAA5;
     --quaternary-col: #FFFBE9;
 }
+html {
+    background-color: var(--secondary-col);
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Spartan', sans-serif;
@@ -23,11 +27,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     position: sticky;
-    padding: 15px;
+    position: -webkit-sticky;
     top: 0;
     z-index: 9999;
-
-
 }
 
 header a {
@@ -106,4 +108,47 @@ footer p {
 .avatar img {
     width: 500px;
     height: auto;
+}
+
+.services {
+    background-color: var(--secondary-col);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.service img {
+    width: 400px;
+    height: auto;
+    padding: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    padding: 80px 0 20px 0;
+    border-bottom: 10px solid var(--tertiary-col);
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.service h2 {
+    font-size: 38px;
+    text-align: center;
+    padding: 5px 0 20px 0;
+}
+
+.service p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
 }
